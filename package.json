@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "mongodb": "^6.11.0"
+  },
+  "name": "my-fullstack-project",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+        "start-frontend": "npm start --prefix APP_Project",
+        "start-backend": "npm start --prefix backend"
+    },
+    "devDependencies": {
+        "concurrently": "^7.6.0"
+    }
+}
